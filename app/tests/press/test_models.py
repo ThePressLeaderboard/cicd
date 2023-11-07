@@ -18,3 +18,12 @@ def test_press_model2(db):
     )
 
     assert Press.objects.count() == 1
+
+
+def test_press_model3(db):
+    press_sample = Press.objects.create(
+        name='조선일보',
+        press_id='123'
+    )
+
+    assert Press.objects.count() == 1
